@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: #b5dbcf;
+  font-family: monospace;
+}
+
+.container {
+  background-color: aliceblue;
+  width: 400px;
+  padding: 30px;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #19466e;
+}
+
+.textarea {
+  resize: none;
+  width: 100%;
+  height: 100 px;
+  font-size: 18px;
+  font-family: sans-serif;
+  padding: 10px;
+  box-sizing: border-box;
+  border: solid 2px darkgray;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 5px;
+}
+
+.counter-container p {
+  font-size: 16px;
+  color: #999191;
+}
+
+.total-counter {
+  color: red;
+}
+
+.remaining-counter {
+  color: blue;
+}

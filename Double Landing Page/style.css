@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  font-family: cursive;
+}
+
+h1 {
+  font-size: 50px;
+  color: azure;
+  backdrop-filter: brightness(50%);
+  letter-spacing: 2px
+}
+
+.btn {
+  background-color: #0e0d0d;
+  color: white;
+  margin: 55px;
+  padding: 20px 40px;
+  font-size: 20px;
+  border: 4px solid white;
+  cursor: pointer;
+  transition: 1s background-color;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.split {
+  width: 50%;
+  height: 100%;
+  top: 0;
+  overflow: hidden;
+  transition: width 4s ease-in-out;
+}
+
+.split.left {
+  position: absolute;
+  left: 0;
+  background-color: pink;
+  background-image: url("https://www.pngall.com/wp-content/uploads/14/Pink-iPhone-13-PNG-Picture.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.split.right {
+  position: absolute;
+  right: 0;
+  background-color: bisque;
+  background-image: url("https://compasia.com.ph/cdn/shop/files/iphone-13-pro-max-109639_600x.png?v=1717653202");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.container.active-left .left {
+  width: 60%;
+}
+
+.container.active-left .right {
+  width: 40%;
+}
+
+.container.active-right .left {
+  width: 40%;
+}
+
+.container.active-right .right {
+  width: 60%;
+}
+
+/* .left,
+.right {
+  transition: width 2s ease-in-out;
+} */

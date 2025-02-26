@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #a0f3d7;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  background-color: darkcyan;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px #0a2828;
+}
+
+.input {
+  width: 100%;
+  font-size: 16px;
+  height: 30px;
+}
+
+.payment {
+  font-weight: 600;
+  font-size: 20px;
+}
